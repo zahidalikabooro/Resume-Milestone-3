@@ -1,5 +1,5 @@
 // Get reference to the form and display area
-const form = document.getElementById("resume-form") as HTMLFormElement
+const form= document.getElementById("resume-form") as HTMLFormElement
 const resumeDisplayElement = document.getElementById("resume-display") as HTMLDivElement;
 
 // Handle form Submission
@@ -10,9 +10,9 @@ form.addEventListener("submit",(event :Event) =>{
     const name = (document.getElementById("name") as HTMLInputElement).value
     const email = (document.getElementById("email") as HTMLInputElement).value
     const phone = (document.getElementById("phone") as HTMLInputElement).value
-    const education = (document.getElementById("education") as HTMLInputElement).value
-    const experience = (document.getElementById("experience") as HTMLInputElement).value
-    const skills = (document.getElementById("skills") as HTMLInputElement).value
+    const education = (document.getElementById("education") as HTMLTextAreaElement).value
+    const experience = (document.getElementById("experience") as HTMLTextAreaElement).value
+    const skills = (document.getElementById("skills") as HTMLTextAreaElement).value
 
 
 // Generate the resume content dynamically
